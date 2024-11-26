@@ -18,7 +18,7 @@
 /dts-v1/;
 
 #include "mesong12a_superbird.dtsi"
-#include "partition_superbird_ab.dtsi"
+// #include "partition_superbird_ab.dtsi"
 #include "mesong12a_panel_superbird.dtsi"
 #include <dt-bindings/iio/adc/amlogic-saradc.h>
 
@@ -1018,11 +1018,11 @@
 		compatible = "st,lis2dh12-accel";
 		reg = <0x18>;
 	};
-	
+
 	max20332@35 {
 		reg = <0x35>;
 	};
-	
+
 	tmd27721@39 {
 		compatible = "amstaos,tmd2772";
 		reg = <0x39>;
@@ -1039,7 +1039,7 @@
 
 	mfi@10 {
 		compatible = "apple_mfi_auth";
-		reg = <0x10>;		
+		reg = <0x10>;
 	};
 };
 
@@ -1079,7 +1079,7 @@
 	aml_loopback: loopback {
 		compatible = "amlogic, snd-loopback";
 		clocks = <&clkc CLKID_MPLL1>;
-		clock-names = "datalb_mpll";	
+		clock-names = "datalb_mpll";
 		/*
 		 * 0: out rate = in data rate;
 		 * 1: out rate = loopback data rate;

@@ -1139,6 +1139,9 @@ int aml_emmc_partition_ops(struct mmc_card *card, struct gendisk *disk)
 
 	pr_info("Enter %s\n", __func__);
 
+	pr_info("fuck you amlogic you no longer get this function.");
+	return 0;
+
 	if (is_card_emmc(card) == 0) /* not emmc, nothing to do */
 		return 0;
 

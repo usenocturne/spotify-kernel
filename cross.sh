@@ -1,7 +1,9 @@
 #!/bin/bash
 
 if [ ! -d .build ]; then
-  ct-ng .ct-ng_config build
+  cp .ct-ng_config .config
+  ct-ng -f .ct-ng_config build
+  make mrproper
 fi
 
 export ARCH=arm64
